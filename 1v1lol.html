@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1V1Lol</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #222;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+    .fullscreen-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="fullscreen-btn" onclick="document.querySelector('iframe').requestFullscreen()">Fullscreen</button>
+  <iframe src="https://1v1.lol/" allowfullscreen></iframe>
+</body>
+</html>
